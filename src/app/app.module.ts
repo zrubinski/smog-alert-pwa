@@ -5,10 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { SmogAlertDetailsComponent } from './components/smog-alert-details/smog-alert-details.component';
+import { SmogAlertIndexComponent } from './components/smog-alert-index/smog-alert-index.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SmogAlertDetailsComponent,
+    SmogAlertIndexComponent
   ],
   imports: [
     BrowserModule,
