@@ -1,5 +1,6 @@
 <div class="header">{{title}}</div>
 <div class="content" role="main">
-    <app-smog-alert-index [smogAlertData]="smogAlertData"></app-smog-alert-index>
-    <app-smog-alert-details [smogAlertData]="smogAlertData"></app-smog-alert-details>
+    <app-smog-alert-busy [isBusy]="isBusy"></app-smog-alert-busy>
+    <app-smog-alert-index [smogAlertData]="smogAlertData" *ngIf="!isBusy"></app-smog-alert-index>
+    <app-smog-alert-details [smogAlertData]="smogAlertData" *ngIf="!isBusy"></app-smog-alert-details>
 </div>

@@ -7,12 +7,14 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { SmogAlertDetailsComponent } from './components/smog-alert-details/smog-alert-details.component';
 import { SmogAlertIndexComponent } from './components/smog-alert-index/smog-alert-index.component';
+import { SmogAlertBusyComponent } from './components/smog-alert-busy/smog-alert-busy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SmogAlertDetailsComponent,
-    SmogAlertIndexComponent
+    SmogAlertIndexComponent,
+    SmogAlertBusyComponent
   ],
   imports: [
     BrowserModule,
