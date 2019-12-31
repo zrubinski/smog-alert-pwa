@@ -1,5 +1,6 @@
 {
   "name": "Smog Alert",
+  "orientation": "portrait",
   "short_name": "Smog Alert",
   "theme_color": "#8b4716",
   "background_color": "#fafafa",
