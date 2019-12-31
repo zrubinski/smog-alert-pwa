@@ -32,4 +32,32 @@ export class SmogAlert {
             this.temperature = dto.temperature;
         }
     }
+
+    public isVeryLow = (): boolean => {
+        return this.level === 'VERY_LOW';
+    }
+
+    public isLow = (): boolean => {
+        return this.level === 'LOW';
+    }
+
+    public isMedium = (): boolean => {
+        return this.level === 'MEDIUM';
+    }
+
+    public isHigh = (): boolean => {
+        return this.level === 'HIGH';
+    }
+
+    public isVeryHigh = (): boolean => {
+        return this.level === 'VERY_HIGH';
+    }
+
+    public isExtreme = (): boolean => {
+        return this.level === 'EXTREME';
+    }
+
+    public isAirmageddon = (): boolean => {
+        return this.level === 'AIRMAGEDDON';
+    }
 }

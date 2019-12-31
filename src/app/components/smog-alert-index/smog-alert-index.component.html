@@ -1,6 +1,9 @@
-<div class="smog-alert-index-container">
+<div class="smog-alert-index-container"
+    [ngClass]="{'very-low' : smogAlertData.isVeryLow(), 'low' : smogAlertData.isLow(), 'medium' : smogAlertData.isMedium(),
+    'high' : smogAlertData.isHigh(), 'very-high' : smogAlertData.isVeryHigh(), 'extreme' : smogAlertData.isExtreme(),
+    'airmageddon' : smogAlertData.isAirmageddon() }">
     <div class="smog-alert-index">
-        <span class="smog-alert-index-value">{{smogAlertData.index}}</span>
+        <span class="smog-alert-index-value">{{smogAlertData.index | number : '1.0-0'}}</span>
         <span class="smog-alert-index-unit">CAQI</span>
     </div>
     <div class="smog-alert-description">

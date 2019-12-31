@@ -8,7 +8,34 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: rgb(209, 207, 30);;
+
+    &.very-low {
+        background-color: #6BC926;
+    }
+
+    &.low {
+        background-color: #D1CF1E;
+    }
+
+    &.medium {
+        background-color: #EFBB0F;
+    }
+
+    &.high {
+        background-color: #EF7120;
+    }
+
+    &.very-high {
+        background-color: #EF2A36;
+    }
+
+    &.extreme {
+        background-color: #B00057;
+    }
+
+    &.airmagedon {
+        background-color: #770078;
+    }
 }
 
 .smog-alert-index {
